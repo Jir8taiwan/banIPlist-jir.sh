@@ -7,6 +7,7 @@ Using IPSET and IPTABLES to preload understood bad IPs to drop connections
 3. FireHOL的清單https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset
 4. Blocklist.de的清單https://lists.blocklist.de/lists/all.txt
 5. Spamhaus的清單https://www.spamhaus.org/drop/drop.txt
+
 透過一個簡單的script指令和設定來定時下載更新檔案，然後合併處理移除彼此重複的IP值。
 最後就會產出一個ip.blacklist檔案，隨時可以拿來利用。
 PS. 截至目前為止，已知的IPV4惡意IP約快9萬個、IPV6約快3千個。
