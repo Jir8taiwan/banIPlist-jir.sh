@@ -55,3 +55,13 @@ sudo ip6tables -L INPUT -v -n
 
 文章放在：
 https://jir.idv.tw/wordpress/?p=3176
+
+****
+If this small code is helping through Arduino kits, it can donate BCH coin to me for encourage as following address:
+
+    BTC - 3M4wWghm4MxmrSfXmHMEeCFNwP8Lxxqjzk
+    BCH - bitcoincash:qq6ghvdmyusnse9735rd5q09ensacl8z8qzrlwf49q
+    LTC - MR6HaFkfkmsfifX3jWu7xz33dULGotVUWB
+    DOGE- DGEFd3AAfJrBuaUwc4P6R2ZT754Jon9fQ7
+
+Thank you very much.
