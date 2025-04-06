@@ -17,20 +17,20 @@ PS. 截至目前為止，已知的IPV4惡意IP約快9萬個、IPV6約快3千個�
 首先，要先確認是不是都有安裝到這些套件：
 sudo apt install ipset iptables netfilter-persistent ipset-persistent iptables-persistent
 
-#修改可執行
+修改可執行
 sudo chmod +x ./banIPlist-jir.sh
-#執行，這個筆數越大，整體執行時間會越久。
+執行，這個筆數越大，整體執行時間會越久。
 sudo ./banIPlist-jir.sh
 
 最後，上面的檔案如果執行完成、也正常運作。
 我們讓它遇到重開機時，先預先載入復原這個防護狀態。要執行備份和功能啟用。
-#設定存檔
+設定存檔
 sudo netfilter-persistent save
 sudo ipset-persistent save
-#或者這樣存檔
+或者這樣存檔
 sudo dpkg-reconfigure ipset-persistent
 sudo dpkg-reconfigure iptables-persistent
-#啟用和檢查
+啟用和檢查
 sudo systemctl enable netfilter-persistent
 sudo systemctl start netfilter-persistent
 sudo systemctl status netfilter-persistent
